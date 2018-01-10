@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.pvirtech.pzpolice.ui.activity.work.ChangePasswordActivity">
+
+    <include
+        layout="@layout/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/mission_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mission_name"
+                    android:textSize="@dimen/text_size_3"/>
+
+                <TextView
+                    android:id="@+id/limite_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="@string/limite_time"
+                    android:textSize="@dimen/text_size_2"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/text_size_2">
+
+                <TextView
+                    android:id="@+id/mission_describe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mission_describe"
+                    android:textSize="@dimen/text_size_2"/>
+
+                <TextView
+                    android:id="@+id/mission_kind"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="@string/mission_kind"
+                    android:textSize="@dimen/text_size_2"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/interval2">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/put_mission_quantity"
+                    android:textSize="@dimen/text_size_2"/>
+
+                <EditText
+                    android:id="@+id/mission_quantity"
+                    android:layout_width="@dimen/button_size_6"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_background"
+                    android:gravity="right"
+                    android:singleLine="true"
+                    android:textSize="@dimen/text_size_2"/>
+
+                <Spinner
+                    android:id="@+id/mission_unit"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent">
+
+                </Spinner>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/interval2">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/point"
+                    android:textSize="@dimen/text_size_2"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/point_quantity"
+                    android:textSize="@dimen/text_size_2"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/interval2"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/add_people"
+                    android:textSize="@dimen/text_size_2"/>
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/name1"
+                    android:textSize="@dimen/text_size_2"/>
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/name2"
+                    android:textSize="@dimen/text_size_2"/>
+
+                <ImageView
+                    android:id="@+id/imageButton"
+                    android:layout_width="@dimen/button_size_4"
+                    android:layout_height="@dimen/button_size_4"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:src="@mipmap/add_people"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/interval2">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/point_distribute"
+                    android:textSize="@dimen/text_size_2"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/blue_button_selector_a"
+                    android:text="@string/point_for_one"
+                    android:textColor="@color/text_white"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/blue_button_selector_a"
+                    android:text="@string/average_point"
+                    android:textColor="@color/text_white"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/blue_button_selector_a"
+                    android:text="@string/set_point"
+                    android:textColor="@color/text_white"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/interval2">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/remarks"
+                    android:textSize="@dimen/text_size_2"/>
+
+                <EditText
+                    android:id="@+id/remarks"
+                    android:layout_width="match_parent"
+                    android:layout_height="104dp"
+                    android:background="@drawable/edit_background"
+                    android:gravity="top"
+                    android:hint="@string/remarks_text"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <Button
+                    android:id="@+id/save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/blue_button_selector_a"
+                    android:text="@string/save"
+                    android:textColor="@color/text_white"/>
+                <Button
+                    android:id="@+id/submit_mission"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/blue_button_selector_a"
+                    android:text="@string/submit_mission"
+                    android:textColor="@color/text_white"/>
+                <Button
+                    android:id="@+id/reset"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/blue_button_selector_a"
+                    android:text="@string/reset"
+                    android:textColor="@color/text_white"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

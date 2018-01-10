@@ -1,0 +1,2 @@
+include ':app', ':sweetalertdialog', ':sublimepickerlibrary', ':addressbooks', ':platelibrary', ':multiimageselectorlibrary', ':camera', ':library'
+

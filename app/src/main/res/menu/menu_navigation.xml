@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/task"
+        android:icon="@mipmap/task"
+        android:title="@string/task"/>
+
+    <item
+        android:id="@+id/attendance"
+        android:icon="@mipmap/attendance"
+        android:title="@string/attendance"/>
+
+    <item
+        android:id="@+id/mail_list"
+        android:icon="@mipmap/mail_list"
+        android:title="@string/person"/>
+    <item
+        android:id="@+id/scoreboard"
+        android:icon="@mipmap/scoreboard"
+        android:title="@string/scoreboard"/>
+
+</menu>

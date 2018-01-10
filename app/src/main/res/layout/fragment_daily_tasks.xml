@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/content_background"
+    android:orientation="vertical"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/interval2"
+            android:paddingTop="@dimen/interval2">
+
+            <TextView
+                android:id="@+id/tv_task_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/interval2"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_3"/>
+
+            <TextView
+                android:id="@+id/tv_assigned_tasks_completion_degree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="(2/5)"/>
+
+            <LinearLayout
+                android:id="@+id/lin_chose_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/interval2"
+                android:background="@drawable/theme_button_background"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_info_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/interval2"
+                    android:gravity="right"
+                    android:text="2017-3-1"
+                    android:textColor="@color/text_normal"
+                    android:textSize="@dimen/text_size_2"
+                    />
+
+                <ImageView
+                    android:layout_width="@dimen/button_size_4"
+                    android:layout_height="@dimen/button_size_4"
+                    android:layout_marginLeft="@dimen/interval1"
+                    android:src="@mipmap/down"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <include layout="@layout/item_line"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/bt_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/content_background"
+                    android:text="全部"/>
+
+                <View
+                    android:id="@+id/under_line_bt_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/interval1"
+                    android:background="@color/orange"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="@dimen/button_size_5"
+                android:background="@color/black"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/bt_not_finish"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/content_background"
+                    android:text="未完成"/>
+
+                <View
+                    android:id="@+id/under_line_bt_not_finish"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/interval1"
+                    android:background="@color/orange"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="@dimen/button_size_5"
+                android:background="@color/black"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/bt_finish"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/content_background"
+                    android:text="已完成"/>
+
+                <View
+                    android:id="@+id/under_line_bt_finish"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/interval1"
+                    android:background="@color/orange"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="@dimen/button_size_5"
+                android:background="@color/black"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/bt_over_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/content_background"
+                    android:text="超时"/>
+
+                <View
+                    android:id="@+id/under_line_bt_over_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/interval1"
+                    android:background="@color/orange"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <include layout="@layout/item_line"/>
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/daily_tasks_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/content_background">
+            </android.support.v7.widget.RecyclerView>
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,676 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/content_background"
+    android:orientation="vertical"
+    >
+
+    <include
+        layout="@layout/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_first_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/interval2"
+                android:paddingTop="@dimen/interval2">
+
+                <ImageView
+                    android:layout_width="@dimen/button_size_4"
+                    android:layout_height="@dimen/button_size_4"
+                    android:layout_marginLeft="@dimen/interval1"
+                    android:src="@mipmap/case_type"/>
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/interval1"
+                    android:text="业务类型　"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_3"/>
+
+                <TextView
+                    android:id="@+id/tv_first_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:hint="@string/chose_task_type"
+                    android:textColor="@color/text_normal"
+                    android:textSize="@dimen/text_size_3"/>
+
+                <ImageView
+                    android:layout_width="@dimen/button_size_4"
+                    android:layout_height="@dimen/button_size_4"
+                    android:layout_marginRight="@dimen/interval2"
+                    android:src="@mipmap/right"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/item_line"/>
+
+            <LinearLayout
+                android:id="@+id/ll_second_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/interval2"
+                android:paddingTop="@dimen/interval2">
+
+                <ImageView
+                    android:layout_width="@dimen/button_size_4"
+                    android:layout_height="@dimen/button_size_4"
+                    android:layout_marginLeft="@dimen/interval1"
+                    android:src="@mipmap/case_type"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/interval1"
+                    android:text="任务类型　"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_3"/>
+
+                <TextView
+                    android:id="@+id/tv_second_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:hint="@string/chose_task_type"
+                    android:textColor="@color/text_normal"
+                    android:textSize="@dimen/text_size_3"/>
+
+                <ImageView
+                    android:layout_width="@dimen/button_size_4"
+                    android:layout_height="@dimen/button_size_4"
+                    android:layout_marginRight="@dimen/interval2"
+                    android:src="@mipmap/right"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/item_line"/>
+
+            <LinearLayout
+                android:id="@+id/ll_third_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/interval2"
+                android:paddingTop="@dimen/interval2">
+
+                <ImageView
+                    android:layout_width="@dimen/button_size_4"
+                    android:layout_height="@dimen/button_size_4"
+                    android:layout_marginLeft="@dimen/interval1"
+                    android:src="@mipmap/case_type"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/interval1"
+                    android:text="案件类型　"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_3"/>
+
+                <TextView
+                    android:id="@+id/tv_third_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:hint="@string/chose_task_type"
+                    android:textColor="@color/text_normal"
+                    android:textSize="@dimen/text_size_3"/>
+
+                <ImageView
+                    android:layout_width="@dimen/button_size_4"
+                    android:layout_height="@dimen/button_size_4"
+                    android:layout_marginRight="@dimen/interval2"
+                    android:src="@mipmap/right"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/item_line"/>
+
+            <LinearLayout
+                android:id="@+id/ll_fourth_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/interval2"
+                android:paddingTop="@dimen/interval2">
+
+                <ImageView
+                    android:layout_width="@dimen/button_size_4"
+                    android:layout_height="@dimen/button_size_4"
+                    android:layout_marginLeft="@dimen/interval1"
+                    android:src="@mipmap/case_type"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/interval1"
+                    android:text="事件类型　"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_3"/>
+
+                <TextView
+                    android:id="@+id/tv_fourth_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:hint="@string/chose_task_type"
+                    android:textColor="@color/text_normal"
+                    android:textSize="@dimen/text_size_3"/>
+
+                <ImageView
+                    android:layout_width="@dimen/button_size_4"
+                    android:layout_height="@dimen/button_size_4"
+                    android:layout_marginRight="@dimen/interval2"
+                    android:src="@mipmap/right"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/item_line"/>
+
+
+            <LinearLayout
+                android:id="@+id/ll_fifth_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/interval2"
+                android:paddingTop="@dimen/interval2">
+
+                <ImageView
+                    android:layout_width="@dimen/button_size_4"
+                    android:layout_height="@dimen/button_size_4"
+                    android:layout_marginLeft="@dimen/interval1"
+                    android:src="@mipmap/case_name"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/interval1"
+                    android:text="@string/mission_name"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_3"/>
+
+                <TextView
+                    android:id="@+id/tv_fifth_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:hint="@string/select_task_name"
+                    android:textColor="@color/text_normal"
+                    android:textSize="@dimen/text_size_3"/>
+
+                <ImageView
+                    android:layout_width="@dimen/button_size_4"
+                    android:layout_height="@dimen/button_size_4"
+                    android:layout_marginRight="@dimen/interval2"
+                    android:src="@mipmap/right"/>
+            </LinearLayout>
+
+            <include layout="@layout/item_line"/>
+
+            <LinearLayout
+                android:id="@+id/ll_limited_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/interval2"
+                android:paddingTop="@dimen/interval2">
+
+                <ImageView
+                    android:layout_width="@dimen/button_size_4"
+                    android:layout_height="@dimen/button_size_4"
+                    android:layout_marginLeft="@dimen/interval1"
+                    android:src="@mipmap/time_from_to"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/interval1"
+                    android:text="@string/limited_time"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_3"/>
+
+                <TextView
+                    android:id="@+id/tv_limited_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="@string/date"
+                    android:textColor="@color/text_normal"
+                    android:textSize="@dimen/text_size_3"/>
+
+                <ImageView
+                    android:layout_width="@dimen/button_size_4"
+                    android:layout_height="@dimen/button_size_4"
+                    android:layout_marginRight="@dimen/interval2"
+                    android:src="@mipmap/right"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/item_line"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/interval2"
+                android:paddingTop="@dimen/interval2">
+
+                <ImageView
+                    android:layout_width="@dimen/button_size_4"
+                    android:layout_height="@dimen/button_size_4"
+                    android:layout_marginLeft="@dimen/interval1"
+                    android:src="@mipmap/time_from_to"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/interval1"
+                    android:text="完成目标　"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_3"/>
+
+                <EditText
+                    android:id="@+id/ed_target"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/interval4"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_edittext_selecter"
+                    android:gravity="right"
+                    android:hint="@string/please_enter_fill"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:paddingRight="@dimen/interval2"
+                    android:singleLine="true"
+                    android:textColor="@color/text_normal"
+                    android:textSize="@dimen/text_size_3"/>
+
+
+            </LinearLayout>
+
+            <include layout="@layout/item_line"/>
+
+
+            <LinearLayout
+                android:id="@+id/ll_single"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/interval2"
+                android:paddingTop="@dimen/interval2">
+
+                <ImageView
+                    android:layout_width="@dimen/button_size_4"
+                    android:layout_height="@dimen/button_size_4"
+                    android:layout_marginLeft="@dimen/interval1"
+                    android:src="@mipmap/time_from_to"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/interval1"
+                    android:text="单任务分值　"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_3"/>
+
+
+                <EditText
+                    android:id="@+id/ed_single"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/interval4"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_edittext_selecter"
+                    android:gravity="right"
+                    android:hint="@string/please_enter_fill"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:paddingRight="@dimen/interval2"
+                    android:singleLine="true"
+                    android:textColor="@color/text_normal"
+                    android:textSize="@dimen/text_size_3"/>
+
+
+            </LinearLayout>
+
+            <include layout="@layout/item_line"/>
+
+            <LinearLayout
+                android:id="@+id/ll_limit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/interval2"
+                android:paddingTop="@dimen/interval2">
+
+                <ImageView
+                    android:layout_width="@dimen/button_size_4"
+                    android:layout_height="@dimen/button_size_4"
+                    android:layout_marginLeft="@dimen/interval1"
+                    android:src="@mipmap/time_from_to"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/interval1"
+                    android:text="总分值上限　"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_3"/>
+
+
+                <EditText
+                    android:id="@+id/ed_limit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/interval4"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_edittext_selecter"
+                    android:gravity="right"
+                    android:hint="@string/please_enter_fill"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:paddingRight="@dimen/interval2"
+                    android:singleLine="true"
+                    android:textColor="@color/text_normal"
+                    android:textSize="@dimen/text_size_3"/>
+
+
+            </LinearLayout>
+
+            <include layout="@layout/item_line"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/interval2"
+                android:paddingTop="@dimen/interval2">
+
+                <ImageView
+                    android:layout_width="@dimen/button_size_4"
+                    android:layout_height="@dimen/button_size_4"
+                    android:layout_marginLeft="@dimen/interval1"
+                    android:src="@mipmap/time_from_to"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/interval1"
+                    android:text="未完成扣分　"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_3"/>
+
+
+                <EditText
+                    android:id="@+id/ed_unfinished"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/interval4"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_edittext_selecter"
+                    android:gravity="right"
+                    android:hint="@string/please_enter_fill"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:paddingRight="@dimen/interval2"
+                    android:singleLine="true"
+                    android:textColor="@color/text_normal"
+                    android:textSize="@dimen/text_size_3"/>
+
+
+            </LinearLayout>
+
+            <include layout="@layout/item_line"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/interval2"
+                android:paddingTop="@dimen/interval2">
+
+                <ImageView
+                    android:layout_width="@dimen/button_size_4"
+                    android:layout_height="@dimen/button_size_4"
+                    android:layout_marginLeft="@dimen/interval1"
+                    android:src="@mipmap/evaluation_method"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/interval1"
+                    android:text="@string/evaluation_method"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_3"/>
+
+
+                <EditText
+                    android:id="@+id/ed_evaluation_method"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/interval4"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_edittext_selecter"
+                    android:gravity="right"
+                    android:hint="@string/please_enter_fill"
+                    android:minHeight="@dimen/button_size_12"
+                    android:paddingRight="@dimen/interval2"
+                    android:textColor="@color/text_normal"
+                    android:textSize="@dimen/text_size_3"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/item_line"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/interval2"
+                android:paddingTop="@dimen/interval2">
+
+                <ImageView
+                    android:layout_width="@dimen/button_size_4"
+                    android:layout_height="@dimen/button_size_4"
+                    android:layout_marginLeft="@dimen/interval1"
+                    android:src="@mipmap/evaluation_method"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/interval1"
+                    android:layout_weight="1"
+                    android:text="是否是组任务　"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_3"/>
+
+                <CheckBox
+                    android:id="@+id/cb_isgroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/interval6"/>
+            </LinearLayout>
+
+            <include layout="@layout/item_line"/>
+
+            <LinearLayout
+                android:id="@+id/ll_executor_person"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/interval2"
+                android:paddingTop="@dimen/interval2">
+
+                <ImageView
+                    android:layout_width="@dimen/button_size_4"
+                    android:layout_height="@dimen/button_size_4"
+                    android:layout_marginLeft="@dimen/interval1"
+                    android:src="@mipmap/evaluation_method"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/interval1"
+                    android:text="执行人　"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_3"/>
+
+                <TextView
+                    android:id="@+id/tv_executor_person"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textColor="@color/text_normal"
+                    android:textSize="@dimen/text_size_3"/>
+
+                <ImageView
+                    android:layout_width="@dimen/button_size_4"
+                    android:layout_height="@dimen/button_size_4"
+                    android:layout_marginRight="@dimen/interval2"
+                    android:src="@mipmap/right"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_executor_persons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/interval6"
+                android:layout_marginRight="@dimen/interval6"
+                android:layout_weight="1"
+                android:hint="@string/please_enter_fill"
+                android:gravity="left"
+                android:textColor="@color/text_normal"
+                android:textSize="@dimen/text_size_3"/>
+
+            <include layout="@layout/item_line"/>
+
+            <include layout="@layout/item_line"/>
+
+            <LinearLayout
+                android:id="@+id/ll_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/interval2"
+                android:paddingTop="@dimen/interval2">
+
+                <ImageView
+                    android:layout_width="@dimen/button_size_4"
+                    android:layout_height="@dimen/button_size_4"
+                    android:layout_marginLeft="@dimen/interval1"
+                    android:src="@mipmap/evaluation_method"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/interval1"
+                    android:text="任务类型　"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_3"/>
+
+                <TextView
+                    android:id="@+id/tv_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="日常任务"
+                    android:textColor="@color/text_normal"
+                    android:textSize="@dimen/text_size_3"/>
+
+                <ImageView
+                    android:layout_width="@dimen/button_size_4"
+                    android:layout_height="@dimen/button_size_4"
+                    android:layout_marginRight="@dimen/interval2"
+                    android:src="@mipmap/right"/>
+            </LinearLayout>
+
+            <include layout="@layout/item_line"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:minHeight="@dimen/button_size_8"
+                android:orientation="horizontal">
+
+                <com.dd.CircularProgressButton
+                    android:id="@+id/submit"
+                    android:layout_width="@dimen/large_button_width"
+                    android:layout_height="@dimen/button_size_8"
+                    android:textColor="@color/cpb_white"
+                    android:textSize="18sp"
+                    app:cpb_cornerRadius="@dimen/button_radius"
+                    app:cpb_iconComplete="@mipmap/ic_action_accept"
+                    app:cpb_iconError="@mipmap/ic_action_cancel"
+                    app:cpb_selectorIdle="@color/colorPrimary"
+                    app:cpb_textIdle="@string/distribute"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

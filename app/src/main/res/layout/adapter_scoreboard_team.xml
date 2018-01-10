@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/root_view"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/content_background"
+              android:orientation="vertical"
+
+    >
+
+    <LinearLayout
+        android:paddingTop="@dimen/interval2"
+        android:paddingBottom="@dimen/interval2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/score_num"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/num_1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textColor="@color/text_orange"
+            android:textSize="@dimen/text_size_5"/>
+
+        <ImageView
+            android:id="@+id/score_image"
+            android:layout_width="@dimen/button_size_6"
+            android:layout_height="@dimen/button_size_6"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/interval2"
+            android:src="@mipmap/find_password"/>
+
+        <TextView
+            android:id="@+id/score_society"
+            android:layout_marginLeft="@dimen/interval2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/society"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/interval2"
+            android:layout_marginRight="@dimen/interval2"
+            android:text="光明路派出所"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_2"/>
+
+        <TextView
+            android:id="@+id/score_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/interval2"
+            android:text="@string/point_total"
+            android:minWidth="50dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textColor="@color/text_red"
+            android:textSize="@dimen/text_size_4"/>
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/item_line"/>
+</LinearLayout>

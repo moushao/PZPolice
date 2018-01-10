@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/content_work_time"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/interval1"
+        android:paddingLeft="@dimen/interval2"
+        android:paddingTop="@dimen/interval1">
+
+        <ImageView
+            android:layout_width="@dimen/button_size_3"
+            android:layout_height="@dimen/button_size_3"
+            android:src="@mipmap/work_on"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/interval2"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="无"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/interval2"
+                android:text="无申报"
+                android:textColor="@color/text_orange"/>
+
+            <LinearLayout
+                android:id="@+id/lin_chose_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/interval2"
+                android:background="@drawable/theme_button_background"
+                android:gravity="center_vertical"
+
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/interval2"
+                    android:gravity="right"
+                    android:text="现在申报"
+                    />
+
+                <ImageView
+                    android:layout_width="@dimen/button_size_4"
+                    android:layout_height="@dimen/button_size_4"
+                    android:layout_marginLeft="@dimen/interval1"
+                    android:layout_marginRight="@dimen/interval1"
+                    android:src="@mipmap/right_dark"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

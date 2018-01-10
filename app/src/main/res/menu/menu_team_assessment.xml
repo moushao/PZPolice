@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/team_assessment"
+        android:icon="@mipmap/team_assessment"
+        android:title="@string/team_assessment"/>
+
+    <item
+        android:id="@+id/team_assessment_recrod"
+        android:icon="@mipmap/work_content"
+        android:title="@string/team_assessment_recrod"/>
+
+
+</menu>

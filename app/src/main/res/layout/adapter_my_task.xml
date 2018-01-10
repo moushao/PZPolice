@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/interval2">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/interval1"
+        android:paddingTop="@dimen/interval1">
+
+        <TextView
+            android:id="@+id/tv_daily_tasks_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/interval2"
+            android:text="禁毒拘留"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_3"/>
+
+        <TextView
+            android:id="@+id/tv_daily_tasks_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/interval2"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="2017-03-20"
+            android:textColor="@color/text_normal"
+            android:textSize="@dimen/text_size_3"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/interval1"
+        android:paddingTop="@dimen/interval1">
+
+        <TextView
+            android:id="@+id/tv_daily_tasks_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/interval2"
+            android:layout_weight="1"
+            android:text="每半年一个,完成每人15分,未完成扣15分"
+            android:textColor="@color/text_normal"
+            android:textSize="@dimen/text_size_2"/>
+
+        <TextView
+            android:id="@+id/tv_daily_tasks_completion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/interval2"
+            android:gravity="right"
+            android:text="已完成"
+            android:textColor="@color/text_title"
+            android:textSize="@dimen/text_size_3"/>
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/item_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp">
+    </include>
+</LinearLayout>

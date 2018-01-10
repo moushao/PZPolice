@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/need_to_deal"
+        android:icon="@mipmap/ranks"
+        android:title="@string/need_to_deal"/>
+
+    <item
+        android:id="@+id/already_deal"
+        android:icon="@mipmap/business_work"
+        android:title="@string/already_deal"/>
+
+
+</menu>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/screen_background"
+              android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!--<LinearLayout
+                android:id="@+id/ll_my_data"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@color/colorPrimary"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/interval3"
+                android:paddingTop="@dimen/interval3">
+
+                <ImageView
+                    android:layout_width="@dimen/button_size_12"
+                    android:layout_height="@dimen/button_size_12"
+                    android:layout_marginLeft="@dimen/interval2"
+                    android:src="@mipmap/head_portrait"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/interval2"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_my_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="刘警官"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_size_3"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/interval2"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="彭州市光明路派出所"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/text_size_3"/>
+
+                        <TextView
+                            android:id="@+id/tv_my_job"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/interval2"
+                            android:text="副所长"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/text_size_3"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>-->
+
+            <include
+                layout="@layout/content_my_info_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </include>
+
+            <LinearLayout
+                android:id="@+id/ll_notice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/interval1"
+                android:background="@color/content_background"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:paddingBottom="@dimen/interval2"
+                    android:paddingTop="@dimen/interval2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/button_size_4"
+                        android:layout_height="@dimen/button_size_4"
+                        android:layout_marginLeft="@dimen/interval2"
+                        android:src="@mipmap/notice"/>
+
+                    <ezy.ui.view.NoticeView
+                        android:id="@+id/notice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/interval2"
+                        app:nvIconTint="@android:color/white"
+                        app:nvTextColor="@android:color/holo_red_dark"
+                        app:nvTextGravity="left"
+                        app:nvTextSize="@dimen/text_size_4"
+                        />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:background="@android:color/holo_red_dark"
+                    android:visibility="gone">
+                </View>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/interval1"
+                android:background="@color/content_background"
+                android:orientation="vertical">
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/task"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </android.support.v7.widget.RecyclerView>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/interval1"
+                android:background="@color/content_background"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/interval2"
+                    android:layout_marginLeft="@dimen/interval2"
+                    android:layout_marginTop="@dimen/interval2"
+                    android:text="@string/common"
+                    android:textSize="@dimen/text_size_3"
+                    />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycleview_common"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                </android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

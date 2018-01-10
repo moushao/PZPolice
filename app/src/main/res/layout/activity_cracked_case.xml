@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/content_background"
+    android:orientation="vertical"
+    >
+
+    <include
+        layout="@layout/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/interval2"
+                android:paddingTop="@dimen/interval2">
+
+                <ImageView
+                    android:layout_width="@dimen/button_size_4"
+                    android:layout_height="@dimen/button_size_4"
+                    android:layout_marginLeft="@dimen/interval1"
+                    android:src="@mipmap/case_type"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/interval1"
+                    android:text="@string/case_type"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_3"/>
+
+                <TextView
+                    android:id="@+id/tv_cracked_case_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:hint="请选择案件类型"
+                    android:textSize="@dimen/text_size_3"/>
+                <ImageView
+                    android:layout_width="@dimen/button_size_4"
+                    android:layout_height="@dimen/button_size_4"
+                    android:layout_marginRight="@dimen/interval2"
+                    android:src="@mipmap/right"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/item_line"/>
+
+            <LinearLayout
+                android:id="@+id/ll_cracked_case_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/interval2"
+                android:paddingTop="@dimen/interval2">
+
+                <ImageView
+                    android:layout_width="@dimen/button_size_4"
+                    android:layout_height="@dimen/button_size_4"
+                    android:layout_marginLeft="@dimen/interval1"
+                    android:src="@mipmap/time_from_to"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/interval1"
+                    android:text="@string/case_happen_time"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_3"/>
+
+                <TextView
+                    android:id="@+id/tv_cracked_case_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="@string/date"
+                    android:textSize="@dimen/text_size_3"/>
+
+                <ImageView
+                    android:layout_width="@dimen/button_size_4"
+                    android:layout_height="@dimen/button_size_4"
+                    android:layout_marginRight="@dimen/interval2"
+                    android:src="@mipmap/right"/>
+            </LinearLayout>
+
+            <include layout="@layout/item_line"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/interval2"
+                android:paddingTop="@dimen/interval2">
+
+                <ImageView
+                    android:layout_width="@dimen/button_size_4"
+                    android:layout_height="@dimen/button_size_4"
+                    android:layout_marginLeft="@dimen/interval1"
+                    android:src="@mipmap/case_place"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/interval1"
+                    android:text="@string/case_place"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_3"/>
+
+                <TextView
+                    android:id="@+id/tv_cracked_case_place"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="@string/chose_alarm_place"
+                    android:textSize="@dimen/text_size_3"/>
+
+                <ImageView
+                    android:layout_width="@dimen/button_size_4"
+                    android:layout_height="@dimen/button_size_4"
+                    android:layout_marginRight="@dimen/interval2"
+                    android:src="@mipmap/right"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/item_line"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/interval2"
+                android:paddingTop="@dimen/interval2">
+
+                <ImageView
+                    android:layout_width="@dimen/button_size_4"
+                    android:layout_height="@dimen/button_size_4"
+                    android:layout_marginLeft="@dimen/interval1"
+                    android:src="@mipmap/case_name"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/interval1"
+                    android:text="@string/case_name"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_3"/>
+
+
+                <EditText
+                    android:id="@+id/et_cracked_case_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/interval2"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_edittext_selecter"
+                    android:gravity="right"
+                    android:hint="请输入名称"
+                    android:maxLines="1"
+                    android:paddingRight="@dimen/interval2"
+                    android:singleLine="true"
+                    android:textSize="@dimen/text_size_3"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/item_line"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/interval2"
+                android:paddingTop="@dimen/interval2">
+
+                <ImageView
+                    android:layout_width="@dimen/button_size_4"
+                    android:layout_height="@dimen/button_size_4"
+                    android:layout_marginLeft="@dimen/interval1"
+                    android:src="@mipmap/case_client"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/interval1"
+                    android:text="@string/suspects_name"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_3"/>
+
+
+                <EditText
+                    android:id="@+id/et_cracked_case_litigant_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/interval2"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_edittext_selecter"
+                    android:gravity="right"
+                    android:hint="@string/enter_name"
+                    android:maxLines="1"
+                    android:paddingRight="@dimen/interval2"
+                    android:singleLine="true"
+                    android:textSize="@dimen/text_size_3"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/item_line"/>
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/interval2"
+            android:paddingTop="@dimen/interval2">
+
+            <ImageView
+                android:layout_width="@dimen/button_size_4"
+                android:layout_height="@dimen/button_size_4"
+                android:layout_marginLeft="@dimen/interval1"
+                android:src="@mipmap/case_result"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/interval1"
+                android:text="@string/handling_situation"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_3"/>
+            <TextView
+                android:id="@+id/tv_cracked_case_handling_situation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="@string/please_chose"
+                android:textSize="@dimen/text_size_3"/>
+
+            <ImageView
+                android:layout_width="@dimen/button_size_4"
+                android:layout_height="@dimen/button_size_4"
+                android:layout_marginRight="@dimen/interval2"
+                android:src="@mipmap/right"/>
+
+        </LinearLayout>
+
+            <include layout="@layout/item_line"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/interval2"
+                android:paddingTop="@dimen/interval2">
+
+                <ImageView
+                    android:layout_width="@dimen/button_size_4"
+                    android:layout_height="@dimen/button_size_4"
+                    android:layout_marginLeft="@dimen/interval1"
+                    android:src="@mipmap/case_police_main"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/interval1"
+                    android:text="@string/host_police"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_3"/>
+
+                <TextView
+                    android:id="@+id/tv_cracked_case_police"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:hint="默认用户名不可选择"
+                    android:textSize="@dimen/text_size_3"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/item_line"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/interval2"
+                android:paddingTop="@dimen/interval2">
+
+                <ImageView
+                    android:layout_width="@dimen/button_size_4"
+                    android:layout_height="@dimen/button_size_4"
+                    android:layout_marginLeft="@dimen/interval1"
+                    android:src="@mipmap/co_police"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/interval1"
+                    android:text="@string/co_police"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_3"/>
+
+                <TextView
+                    android:id="@+id/tv_cracked_case_co_police"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:hint="请选择人员"
+                    android:textSize="@dimen/text_size_3"/>
+
+                <ImageView
+                    android:layout_width="@dimen/button_size_4"
+                    android:layout_height="@dimen/button_size_4"
+                    android:layout_marginRight="@dimen/interval2"
+                    android:src="@mipmap/right"/>
+            </LinearLayout>
+
+            <include layout="@layout/item_line"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/interval2"
+                android:paddingTop="@dimen/interval2">
+
+                <ImageView
+                    android:layout_width="@dimen/button_size_4"
+                    android:layout_height="@dimen/button_size_4"
+                    android:layout_marginLeft="@dimen/interval1"
+                    android:src="@mipmap/auxiliary_police"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/interval1"
+                    android:text="@string/auxiliary_police"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_3"/>
+
+                <TextView
+                    android:id="@+id/tv_cracked_case_auxiliary_police"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:hint="请选择人员"
+                    android:textSize="@dimen/text_size_3"/>
+
+                <ImageView
+                    android:layout_width="@dimen/button_size_4"
+                    android:layout_height="@dimen/button_size_4"
+                    android:layout_marginRight="@dimen/interval2"
+                    android:src="@mipmap/right"/>
+            </LinearLayout>
+
+            <include layout="@layout/item_line"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/interval2"
+                android:paddingTop="@dimen/interval2">
+
+                <ImageView
+                    android:layout_width="@dimen/button_size_4"
+                    android:layout_height="@dimen/button_size_4"
+                    android:layout_marginLeft="@dimen/interval1"
+                    android:src="@mipmap/point_distribute"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/interval1"
+                    android:text="@string/point_distribute"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_3"/>
+
+                <TextView
+                    android:id="@+id/tv_cracked_case_point"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginRight="@dimen/interval2"
+                    android:gravity="right"
+                    android:text="总分10分"
+                    android:textSize="@dimen/text_size_3"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/item_line"/>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/cracked_case_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/content_background"></android.support.v7.widget.RecyclerView>
+
+            <include layout="@layout/item_line"/>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/interval2"
+                android:paddingTop="@dimen/interval2">
+
+                <ImageView
+                    android:layout_width="@dimen/button_size_4"
+                    android:layout_height="@dimen/button_size_4"
+                    android:layout_marginLeft="@dimen/interval1"
+                    android:src="@mipmap/remarks"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/interval1"
+                    android:text="@string/remarks"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_3"/>
+            </LinearLayout>
+
+            <include layout="@layout/item_line"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/interval2"
+                android:paddingTop="@dimen/interval2">
+
+                <EditText
+                    android:id="@+id/et_cracked_case_remarks"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/interval2"
+                    android:layout_marginRight="@dimen/interval2"
+                    android:enabled="true"
+                    android:gravity="center"
+                    android:hint="@string/remarks_text"
+                    android:textSize="@dimen/text_size_3"/>
+            </LinearLayout>
+
+            <include layout="@layout/item_line"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/interval2"
+                android:paddingTop="@dimen/interval2">
+
+                <TextView
+                    android:id="@+id/tv_cracked_case_upload_attachments"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="@string/upload_attachments"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/text_size_3"/>
+            </LinearLayout>
+
+            <include layout="@layout/item_line"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:minHeight="@dimen/button_size_8"
+                android:orientation="horizontal">
+
+                <com.dd.CircularProgressButton
+                    android:id="@+id/cracked_case_submit"
+                    android:layout_width="@dimen/large_button_width"
+                    android:layout_height="@dimen/button_size_8"
+                    android:textColor="@color/cpb_white"
+                    android:textSize="18sp"
+                    app:cpb_cornerRadius="@dimen/button_radius"
+                    app:cpb_iconComplete="@mipmap/ic_action_accept"
+                    app:cpb_iconError="@mipmap/ic_action_cancel"
+                    app:cpb_selectorIdle="@color/colorPrimary"
+                    app:cpb_textIdle="@string/declare"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <include
+        layout="@layout/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></include>
+
+</LinearLayout>

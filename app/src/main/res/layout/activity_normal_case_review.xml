@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/content_background"
+              android:orientation="vertical">
+
+    <include
+        layout="@layout/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_case_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/interval2"
+                android:paddingTop="@dimen/interval2">
+
+                <ImageView
+                    android:layout_width="@dimen/button_size_4"
+                    android:layout_height="@dimen/button_size_4"
+                    android:layout_marginLeft="@dimen/interval1"
+                    android:src="@mipmap/case_type"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/interval1"
+                    android:text="@string/case_type"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_3"/>
+
+                <TextView
+                    android:id="@+id/tv_case_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/interval2"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textSize="@dimen/text_size_3"/>
+
+
+            </LinearLayout>
+
+            <include layout="@layout/item_line"/>
+
+            <LinearLayout
+                android:id="@+id/ll_case_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/interval2"
+                android:paddingTop="@dimen/interval2">
+
+                <ImageView
+                    android:layout_width="@dimen/button_size_4"
+                    android:layout_height="@dimen/button_size_4"
+                    android:layout_marginLeft="@dimen/interval1"
+                    android:src="@mipmap/time_from_to"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/interval1"
+                    android:text="@string/case_time"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_3"/>
+
+                <TextView
+                    android:id="@+id/tv_case_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/interval2"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textSize="@dimen/text_size_3"/>
+
+
+            </LinearLayout>
+
+            <include layout="@layout/item_line"/>
+
+            <LinearLayout
+                android:id="@+id/ll_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/interval2"
+                android:paddingTop="@dimen/interval2">
+
+                <ImageView
+                    android:layout_width="@dimen/button_size_4"
+                    android:layout_height="@dimen/button_size_4"
+                    android:layout_marginLeft="@dimen/interval1"
+                    android:src="@mipmap/case_place"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/interval1"
+                    android:text="@string/case_place"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_3"/>
+
+                <EditText
+                    android:id="@+id/ed_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/interval2"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_edittext_selecter"
+                    android:enabled="false"
+                    android:gravity="right"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/text_dark"
+                    android:textSize="@dimen/text_size_3"/>
+
+
+            </LinearLayout>
+
+            <include layout="@layout/item_line"/>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/interval2"
+                android:paddingTop="@dimen/interval2">
+
+                <ImageView
+                    android:layout_width="@dimen/button_size_4"
+                    android:layout_height="@dimen/button_size_4"
+                    android:layout_marginLeft="@dimen/interval1"
+                    android:src="@mipmap/case_name"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/interval1"
+                    android:text="@string/case_name"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_3"/>
+
+                <EditText
+                    android:id="@+id/ed_case_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/interval2"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_edittext_selecter"
+                    android:enabled="false"
+                    android:gravity="right"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/text_dark"
+                    android:textSize="@dimen/text_size_3"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/item_line"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/interval2"
+                android:paddingTop="@dimen/interval2">
+
+                <ImageView
+                    android:layout_width="@dimen/button_size_4"
+                    android:layout_height="@dimen/button_size_4"
+                    android:layout_marginLeft="@dimen/interval1"
+                    android:src="@mipmap/case_client"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/interval1"
+                    android:text="@string/litigant_name"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_3"/>
+
+                <EditText
+                    android:id="@+id/ed_person_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/interval2"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_edittext_selecter"
+                    android:enabled="false"
+                    android:gravity="right"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/text_dark"
+                    android:textSize="@dimen/text_size_3"/>
+
+
+            </LinearLayout>
+
+            <include layout="@layout/item_line"/>
+
+            <LinearLayout
+                android:id="@+id/ll_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/interval2"
+                android:paddingTop="@dimen/interval2">
+
+                <ImageView
+                    android:layout_width="@dimen/button_size_4"
+                    android:layout_height="@dimen/button_size_4"
+                    android:layout_marginLeft="@dimen/interval1"
+                    android:src="@mipmap/case_result"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/interval1"
+                    android:text="@string/handle_result"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_3"/>
+
+                <TextView
+                    android:id="@+id/tv_result"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/interval2"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textSize="@dimen/text_size_3"/>
+
+
+            </LinearLayout>
+
+            <include layout="@layout/item_line"/>
+
+            <LinearLayout
+                android:id="@+id/ll_mp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/interval2"
+                android:paddingTop="@dimen/interval2">
+
+                <ImageView
+                    android:layout_width="@dimen/button_size_4"
+                    android:layout_height="@dimen/button_size_4"
+                    android:layout_marginLeft="@dimen/interval1"
+                    android:src="@mipmap/case_police_main"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/interval1"
+                    android:text="@string/host_police"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_3"/>
+
+                <TextView
+                    android:id="@+id/tv_mp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/interval2"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textSize="@dimen/text_size_3"/>
+
+
+            </LinearLayout>
+
+            <include layout="@layout/item_line"/>
+
+            <LinearLayout
+                android:id="@+id/ll_join_person"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/interval2"
+                android:paddingTop="@dimen/interval2">
+
+                <ImageView
+                    android:layout_width="@dimen/button_size_4"
+                    android:layout_height="@dimen/button_size_4"
+                    android:layout_marginLeft="@dimen/interval1"
+                    android:src="@mipmap/co_police"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/interval1"
+                    android:text="@string/co_police"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_3"/>
+
+                <TextView
+                    android:id="@+id/tv_join_police"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/interval2"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textSize="@dimen/text_size_3"/>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_join_persons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/interval6"
+                android:layout_marginRight="@dimen/interval6"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:textSize="@dimen/text_size_3"
+                android:visibility="gone"/>
+
+            <include layout="@layout/item_line"/>
+
+            <LinearLayout
+                android:id="@+id/ll_auxiliary_police"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/interval2"
+                android:paddingTop="@dimen/interval2">
+
+                <ImageView
+                    android:layout_width="@dimen/button_size_4"
+                    android:layout_height="@dimen/button_size_4"
+                    android:layout_marginLeft="@dimen/interval1"
+                    android:src="@mipmap/auxiliary_police"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/interval1"
+                    android:text="@string/auxiliary_police"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_3"/>
+
+                <TextView
+                    android:id="@+id/tv_auxiliary_police"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/interval2"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textSize="@dimen/text_size_3"/>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_auxiliary_police_persons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/interval6"
+                android:layout_marginRight="@dimen/interval6"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:textSize="@dimen/text_size_3"
+                android:visibility="gone"/>
+
+            <include layout="@layout/item_line"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/interval2"
+
+                android:paddingTop="@dimen/interval2"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="@dimen/button_size_4"
+                    android:layout_height="@dimen/button_size_4"
+                    android:layout_marginLeft="@dimen/interval1"
+                    android:src="@mipmap/point_distribute"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/interval1"
+                    android:text="@string/point_distribute"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_3"/>
+
+                <TextView
+                    android:id="@+id/tv_case_point"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/interval2"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="总分10分"
+                    android:textSize="@dimen/text_size_3"/>
+
+
+            </LinearLayout>
+
+            <include
+                layout="@layout/item_line"
+                android:visibility="gone"/>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/case_point_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/content_background"
+                android:visibility="gone"></android.support.v7.widget.RecyclerView>
+
+            <include layout="@layout/item_line"/>
+
+
+            <LinearLayout
+                android:id="@+id/ll_input_persons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/interval2"
+                android:paddingTop="@dimen/interval2">
+
+                <ImageView
+                    android:layout_width="@dimen/button_size_4"
+                    android:layout_height="@dimen/button_size_4"
+                    android:layout_marginLeft="@dimen/interval1"
+                    android:src="@mipmap/entry_person"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/interval1"
+                    android:text="@string/entry_person"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_3"/>
+
+                <TextView
+                    android:id="@+id/tv_input_person"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/interval2"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textSize="@dimen/text_size_3"/>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_input_persons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/interval6"
+                android:layout_marginRight="@dimen/interval6"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:textSize="@dimen/text_size_3"
+                android:visibility="gone"/>
+
+            <include layout="@layout/item_line"/>
+
+
+            <LinearLayout
+                android:id="@+id/ll_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/interval2"
+                android:paddingTop="@dimen/interval2">
+
+                <ImageView
+                    android:layout_width="@dimen/button_size_4"
+                    android:layout_height="@dimen/button_size_4"
+                    android:layout_marginLeft="@dimen/interval1"
+                    android:src="@mipmap/remarks"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/interval1"
+                    android:text="@string/remarks"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_3"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/ed_bz"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/interval2"
+                    android:layout_marginRight="@dimen/interval2"
+                    android:background="@drawable/bg_bz_edittext_selecter"
+                    android:enabled="false"
+                    android:gravity="left"
+                    android:minHeight="@dimen/button_size_12"
+                    android:textSize="@dimen/text_size_3"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

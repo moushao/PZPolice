@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:screenOrientation="portrait">
+
+    <include
+        layout="@layout/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></include>
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:screenOrientation="portrait"/>
+
+
+    <ImageView
+        android:id="@+id/iv_position"
+        android:layout_width="@dimen/button_size_8"
+        android:layout_height="@dimen/button_size_8"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="100dp"
+        android:layout_marginLeft="@dimen/interval2"
+        android:background="?android:attr/selectableItemBackground"
+        android:src="@mipmap/location"
+        android:visibility="gone"/>
+
+</LinearLayout>

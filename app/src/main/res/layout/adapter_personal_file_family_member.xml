@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:id="@+id/root_view"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/interval2">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="@color/screen_background"
+        android:paddingBottom="@dimen/interval2"
+        android:paddingTop="@dimen/interval2">
+
+
+        <TextView
+            android:id="@+id/family_member"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/interval1"
+            android:text="家庭成员与本人关系"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_3"/>
+
+        <TextView
+            android:id="@+id/tv_family_member_who"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/interval2"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="父亲"
+            android:textSize="@dimen/text_size_3"/>
+
+    </LinearLayout>
+
+    <include layout="@layout/item_line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/interval2"
+        android:paddingTop="@dimen/interval2">
+
+        <ImageView
+            android:layout_width="@dimen/button_size_4"
+            android:layout_height="@dimen/button_size_4"
+            android:layout_marginLeft="@dimen/interval1"
+            android:src="@mipmap/user_4"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/interval1"
+            android:text="@string/basic_name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_3"/>
+
+        <TextView
+            android:id="@+id/tv_family_member_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/interval2"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="XXX"
+            android:textSize="@dimen/text_size_3"/>
+
+    </LinearLayout>
+
+    <include layout="@layout/item_line"/>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/interval2"
+        android:paddingTop="@dimen/interval2">
+        <ImageView
+            android:layout_width="@dimen/button_size_4"
+            android:layout_height="@dimen/button_size_4"
+            android:layout_marginLeft="@dimen/interval1"
+            android:src="@mipmap/host"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/interval1"
+            android:text="@string/basic_age"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_3"/>
+
+        <TextView
+            android:id="@+id/tv_family_member_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/interval2"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="XX"
+            android:textSize="@dimen/text_size_3"/>
+
+    </LinearLayout>
+
+    <include layout="@layout/item_line"/>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/interval2"
+        android:paddingTop="@dimen/interval2">
+        <ImageView
+            android:layout_width="@dimen/button_size_4"
+            android:layout_height="@dimen/button_size_4"
+            android:layout_marginLeft="@dimen/interval1"
+            android:src="@mipmap/present_location"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/interval1"
+            android:text="@string/family_member_address"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_3"/>
+
+        <TextView
+            android:id="@+id/tv_family_member_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/interval2"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="XXX"
+            android:textSize="@dimen/text_size_3"/>
+
+    </LinearLayout>
+
+    <include layout="@layout/item_line"/>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/interval2"
+        android:paddingTop="@dimen/interval2">
+        <ImageView
+            android:layout_width="@dimen/button_size_4"
+            android:layout_height="@dimen/button_size_4"
+            android:layout_marginLeft="@dimen/interval1"
+            android:src="@mipmap/school"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/interval1"
+            android:text="@string/family_member_work_place"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_3"/>
+
+        <TextView
+            android:id="@+id/tv_family_member_work_place"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/interval2"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="XXX"
+            android:textSize="@dimen/text_size_3"/>
+
+    </LinearLayout>
+
+    <include layout="@layout/item_line"/>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/interval2"
+        android:paddingTop="@dimen/interval2">
+        <ImageView
+            android:layout_width="@dimen/button_size_4"
+            android:layout_height="@dimen/button_size_4"
+            android:layout_marginLeft="@dimen/interval1"
+            android:src="@mipmap/phone_number"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/interval1"
+            android:text="@string/basic_phone_number"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_3"/>
+
+        <TextView
+            android:id="@+id/tv_family_member_phone_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/interval2"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="XXXXXXXXXXXXXXX"
+            android:textSize="@dimen/text_size_3"/>
+
+    </LinearLayout>
+
+    <include layout="@layout/item_line"/>
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/ll_unnormal"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/screen_background"
+              android:gravity="center"
+              android:orientation="vertical"
+              android:visibility="gone"
+    >
+
+    <LinearLayout
+        android:id="@+id/ll_http_error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@mipmap/http_error"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="网络异常，请检查网络"
+            android:textColor="@color/text_red"
+            android:textSize="@dimen/text_size_3"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_no_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@mipmap/no_result"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="暂时没有数据！"
+            android:textColor="@color/text_orange"
+            android:textSize="@dimen/text_size_3"/>
+    </LinearLayout>
+</LinearLayout>

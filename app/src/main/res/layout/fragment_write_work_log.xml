@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:fab="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/screen_background"
+              android:orientation="vertical">
+
+    <!--<include
+        layout="@layout/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></include>-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/interval1"
+                android:layout_marginLeft="@dimen/interval2"
+                android:layout_marginTop="@dimen/interval1"
+                android:text="今日日志"
+                android:textSize="@dimen/text_size_3"/>
+
+            <include layout="@layout/item_line"/>
+
+
+            <EditText
+                android:id="@+id/et_work_log"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_edittext_selecter"
+                android:gravity="left"
+                android:hint="请输入今日工作简要,需协调问题等。"
+                android:minHeight="@dimen/button_size_18"
+                android:paddingLeft="@dimen/interval2"
+                android:textSize="@dimen/text_size_3"/>
+
+
+            <include layout="@layout/item_line"/>
+
+            <LinearLayout
+                android:id="@+id/ll_upload_picture"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/content_background"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/interval2"
+                android:paddingTop="@dimen/interval2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/interval1"
+                    android:layout_weight="1"
+                    android:text="@string/picture"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_3"/>
+
+                <ImageView
+                    android:id="@+id/iv_upload_picture"
+                    android:layout_width="@dimen/button_size_6"
+                    android:layout_height="@dimen/button_size_6"
+                    android:layout_marginLeft="@dimen/interval1"
+                    android:layout_marginRight="@dimen/interval2"
+                    android:src="@mipmap/picture"/>
+
+                <ImageView
+                    android:id="@+id/iv_camera"
+                    android:layout_width="@dimen/button_size_6"
+                    android:layout_height="@dimen/button_size_6"
+                    android:layout_marginLeft="@dimen/interval1"
+                    android:layout_marginRight="@dimen/interval2"
+                    android:src="@mipmap/take_photo"/>
+
+            </LinearLayout>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycleview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </android.support.v7.widget.RecyclerView>
+
+            <include layout="@layout/item_line"/>
+
+            <include layout="@layout/item_line"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/interval2"
+                android:paddingTop="@dimen/interval2">
+
+                <ImageView
+                    android:layout_width="@dimen/button_size_3"
+                    android:layout_height="@dimen/button_size_3"
+                    android:layout_marginLeft="@dimen/interval1"
+                    android:src="@mipmap/case_place"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/interval1"
+                    android:text="获取位置信息"
+                    android:textSize="@dimen/text_size_2"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:minHeight="@dimen/button_size_8"
+                android:orientation="horizontal">
+
+                <com.dd.CircularProgressButton
+                    android:id="@+id/submit"
+                    android:layout_width="@dimen/large_button_width"
+                    android:layout_height="@dimen/button_size_8"
+                    android:textColor="@color/cpb_white"
+                    android:textSize="18sp"
+                    app:cpb_cornerRadius="@dimen/button_radius"
+                    app:cpb_iconComplete="@mipmap/ic_action_accept"
+                    app:cpb_iconError="@mipmap/ic_action_cancel"
+                    app:cpb_selectorIdle="@color/colorPrimary"
+                    app:cpb_textIdle="提交"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

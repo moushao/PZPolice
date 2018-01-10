@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/root_view"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/screen_background"
+              android:orientation="vertical"
+              tools:context="com.pvirtech.pzpolice.ui.activity.leave.LeaveActivity">
+
+    <include
+        layout="@layout/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/content_background"
+            android:fitsSystemWindows="true"
+            android:orientation="vertical">
+
+            <include
+                layout="@layout/content_my_info_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></include>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/interval2"
+                android:layout_marginTop="@dimen/interval2"
+                android:text="假期类型"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_size_3"/>
+
+            <include layout="@layout/item_line"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycleview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/content_background"></android.support.v7.widget.RecyclerView>
+
+            <include layout="@layout/item_interval"/>
+
+
+            <LinearLayout
+                android:id="@+id/ll_total_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/interval2"
+                android:paddingTop="@dimen/interval2">
+
+                <ImageView
+                    android:layout_width="@dimen/button_size_4"
+                    android:layout_height="@dimen/button_size_4"
+                    android:layout_marginLeft="@dimen/interval1"
+                    android:src="@mipmap/time_total"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/interval1"
+                    android:text="休假天数　"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_size_3"/>
+
+                <EditText
+                    android:id="@+id/tv_total_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/text_normal"
+                    android:background="@drawable/bg_edittext_selecter"
+                    android:gravity="right"
+                    android:inputType="number"
+                    android:paddingRight="@dimen/interval2"
+                    android:singleLine="true"
+                    android:text="1"
+                    android:textSize="@dimen/text_size_3"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="天"
+                    android:textColor="@color/text_normal"
+                    android:textSize="@dimen/text_size_3"/>
+
+                <ImageView
+                    android:layout_width="@dimen/button_size_4"
+                    android:layout_height="@dimen/button_size_4"
+                    android:layout_marginRight="@dimen/interval2"
+                    android:src="@mipmap/right"/>
+            </LinearLayout>
+
+            <include layout="@layout/item_line"/>
+
+
+            <LinearLayout
+                android:id="@+id/ll_reason"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/interval2"
+                android:paddingTop="@dimen/interval2">
+
+                <ImageView
+                    android:layout_width="@dimen/button_size_4"
+                    android:layout_height="@dimen/button_size_4"
+                    android:layout_marginLeft="@dimen/interval1"
+                    android:src="@mipmap/reason"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/interval1"
+                    android:text="休假事由　"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_size_3"/>
+
+                <TextView
+                    android:id="@+id/tv_reason"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="@string/please_fill_in"     android:textColor="@color/text_normal"
+                    android:textSize="@dimen/text_size_3"/>
+
+
+                <ImageView
+                    android:layout_width="@dimen/button_size_4"
+                    android:layout_height="@dimen/button_size_4"
+                    android:layout_marginRight="@dimen/interval2"
+                    android:src="@mipmap/right"/>
+
+
+            </LinearLayout>
+
+            <include layout="@layout/item_line"/>
+
+            <LinearLayout
+                android:id="@+id/ll_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/interval2"
+                android:paddingTop="@dimen/interval2">
+
+                <ImageView
+                    android:layout_width="@dimen/button_size_4"
+                    android:layout_height="@dimen/button_size_4"
+                    android:layout_marginLeft="@dimen/interval1"
+                    android:src="@mipmap/time_from_to"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/interval1"
+                    android:text="加班时间　"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_size_3"/>
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="@string/please_fill_in"     android:textColor="@color/text_normal"
+                    android:textSize="@dimen/text_size_3"/>
+
+
+                <ImageView
+                    android:layout_width="@dimen/button_size_4"
+                    android:layout_height="@dimen/button_size_4"
+                    android:layout_marginRight="@dimen/interval2"
+                    android:src="@mipmap/right"/>
+
+
+            </LinearLayout>
+
+            <include layout="@layout/item_line"/>
+
+            <LinearLayout
+                android:id="@+id/ll_person"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/interval2"
+                android:paddingTop="@dimen/interval2">
+
+                <ImageView
+                    android:layout_width="@dimen/button_size_4"
+                    android:layout_height="@dimen/button_size_4"
+                    android:layout_marginLeft="@dimen/interval1"
+                    android:src="@mipmap/add_person"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/interval1"
+                    android:text="@string/vacation_person"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_size_3"/>
+
+                <TextView
+                    android:id="@+id/tv_person_notice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text=""
+                    android:textColor="@color/text_normal"
+                    android:textSize="@dimen/text_size_3"/>
+
+                <ImageView
+                    android:layout_width="@dimen/button_size_4"
+                    android:layout_height="@dimen/button_size_4"
+                    android:layout_marginRight="@dimen/interval2"
+                    android:src="@mipmap/right"/>
+
+
+            </LinearLayout>
+
+
+            <include layout="@layout/item_line"/>
+
+            <TextView
+                android:id="@+id/tv_person"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/interval1"
+                android:paddingLeft="@dimen/interval2"
+                android:paddingTop="@dimen/interval1"
+                android:textColor="@color/text_normal"
+                android:textSize="@dimen/text_size_3"/>
+
+
+            <include layout="@layout/item_line"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:minHeight="@dimen/button_size_8"
+                android:orientation="horizontal">
+
+                <com.dd.CircularProgressButton
+                    android:id="@+id/submit"
+                    android:layout_width="@dimen/large_button_width"
+                    android:layout_height="@dimen/button_size_8"
+                    android:textColor="@color/cpb_white"
+                    android:textSize="18sp"
+                    app:cpb_cornerRadius="@dimen/button_radius"
+                    app:cpb_iconComplete="@mipmap/ic_action_accept"
+                    app:cpb_iconError="@mipmap/ic_action_cancel"
+                    app:cpb_selectorIdle="@color/colorPrimary"
+                    app:cpb_textIdle="@string/submit"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

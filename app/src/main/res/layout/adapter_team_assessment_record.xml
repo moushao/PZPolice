@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="@dimen/interval1"
+              android:layout_marginBottom="@dimen/interval1"
+              android:background="@color/content_background"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/interval1"
+        android:paddingRight="@dimen/interval4"
+        android:paddingTop="@dimen/interval1">
+
+        <ImageView
+            android:layout_width="@dimen/button_size_4"
+            android:layout_height="@dimen/button_size_4"
+            android:layout_marginLeft="@dimen/interval1"
+            android:src="@mipmap/time_from_to"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/interval1"
+            android:text="考核时间　"
+            android:textColor="@color/text_title"
+            android:textSize="@dimen/text_size_3"/>
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="@string/empty"
+            android:textSize="@dimen/text_size_3"/>
+
+
+    </LinearLayout>
+
+    <include layout="@layout/item_line"/>
+
+    <LinearLayout
+        android:id="@+id/ll_reason"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/interval1"
+        android:paddingRight="@dimen/interval4"
+        android:paddingTop="@dimen/interval1">
+
+        <ImageView
+            android:layout_width="@dimen/button_size_4"
+            android:layout_height="@dimen/button_size_4"
+            android:layout_marginLeft="@dimen/interval1"
+            android:src="@mipmap/reason"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/interval1"
+            android:text="考核事由　"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_3"/>
+
+        <TextView
+            android:id="@+id/tv_reason"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="@string/empty"
+            android:textSize="@dimen/text_size_3"/>
+
+
+    </LinearLayout>
+
+    <include layout="@layout/item_line"/>
+
+    <LinearLayout
+        android:id="@+id/ll_point"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/interval1"
+        android:paddingRight="@dimen/interval4"
+        android:paddingTop="@dimen/interval1">
+
+        <ImageView
+            android:layout_width="@dimen/button_size_4"
+            android:layout_height="@dimen/button_size_4"
+            android:layout_marginLeft="@dimen/interval1"
+            android:src="@mipmap/points"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/interval1"
+            android:text="分值　"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_3"/>
+
+
+        <TextView
+            android:id="@+id/ed_points"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:paddingRight="@dimen/interval2"
+            android:text="0"
+            android:textSize="@dimen/text_size_3"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="分"
+            android:textSize="@dimen/text_size_3"/>
+
+
+    </LinearLayout>
+
+    <include layout="@layout/item_line"/>
+
+    <LinearLayout
+        android:id="@+id/ll_person"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/interval1"
+        android:paddingRight="@dimen/interval4"
+        android:paddingTop="@dimen/interval1">
+
+        <ImageView
+            android:layout_width="@dimen/button_size_4"
+            android:layout_height="@dimen/button_size_4"
+            android:layout_marginLeft="@dimen/interval1"
+            android:src="@mipmap/add_person"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/interval1"
+            android:text="@string/assessment_person"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_3"/>
+
+        <TextView
+            android:id="@+id/tv_person_notice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text=""
+            android:textSize="@dimen/text_size_3"/>
+
+
+    </LinearLayout>
+
+    <include layout="@layout/item_line"/>
+
+    <include layout="@layout/item_line"/>
+
+    <LinearLayout
+        android:id="@+id/ll_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/interval1"
+        android:paddingTop="@dimen/interval1">
+
+        <ImageView
+            android:layout_width="@dimen/button_size_4"
+            android:layout_height="@dimen/button_size_4"
+            android:layout_marginLeft="@dimen/interval1"
+            android:src="@mipmap/remarks"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/interval1"
+            android:text="@string/remarks"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_3"/>
+
+        <TextView
+            android:id="@+id/ed_bz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/interval2"
+            android:layout_marginRight="@dimen/interval4"
+            android:enabled="true"
+            android:gravity="right"
+            android:hint="@string/empty"
+            android:textSize="@dimen/text_size_3"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/root_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/content_background"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+
+        >
+
+
+        <LinearLayout
+            android:layout_width="@dimen/button_size_12"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/interval2"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_icon"
+                android:layout_width="@dimen/button_size_8"
+                android:layout_height="@dimen/button_size_8"
+                android:src="@mipmap/compassionate_leave"/>
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxEms="3"
+                android:singleLine="true"
+                android:text="事假"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size_3"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/item_line"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/interval2"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/interval2"
+            android:paddingTop="@dimen/interval2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:text="休假单"
+                    android:textColor="@color/text_orange"
+                    android:textSize="@dimen/text_size_3"/>
+
+                <TextView
+                    android:id="@+id/tv_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/interval1"
+                    android:singleLine="true"
+                    android:text="2分"
+                    android:textColor="@color/text_orange"
+                    android:textSize="@dimen/text_size_3"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:text="@string/assessment_methods"
+                    android:textSize="@dimen/text_size_3"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/assessment_time"
+                    android:textSize="@dimen/text_size_3"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_reason"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/assessment_situation"
+                    android:textSize="@dimen/text_size_3"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/item_line"></View>
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/interval2"
+            android:layout_marginRight="@dimen/interval2"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="审核中"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_size_3"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/item_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        />
+</LinearLayout>

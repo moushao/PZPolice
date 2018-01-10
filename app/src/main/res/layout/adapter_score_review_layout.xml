@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/content_background"
+              android:gravity="center"
+              android:orientation="horizontal"
+              android:paddingBottom="@dimen/interval1"
+              android:paddingTop="@dimen/interval1">
+
+    <ImageView
+        android:id="@+id/picture"
+        android:layout_width="@dimen/button_size_7"
+        android:layout_height="@dimen/button_size_7"
+        android:layout_marginLeft="@dimen/interval2"
+        android:cropToPadding="false"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/basic_task"
+        tools:ignore="ContentDescription"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="@dimen/interval2"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/interval2"
+            android:singleLine="true"
+            android:textColor="@color/text_title"
+            android:textSize="@dimen/text_size_3"/>
+
+        <TextView
+            android:id="@+id/tv_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/interval2"
+            android:layout_marginTop="@dimen/interval1"
+            android:singleLine="true"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_3"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

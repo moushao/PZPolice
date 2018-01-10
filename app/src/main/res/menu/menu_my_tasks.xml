@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/item1"
+        android:icon="@mipmap/daily_tasks_not_chosen"
+        android:title="@string/daily_tasks"/>
+
+    <item
+        android:id="@+id/item2"
+        android:icon="@mipmap/assigned_tasks_not_chosen"
+        android:title="@string/assigned_tasks"/>
+
+
+</menu>

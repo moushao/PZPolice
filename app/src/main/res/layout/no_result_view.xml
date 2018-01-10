@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/ll_no_result"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:orientation="vertical"
+              android:visibility="gone"
+    >
+
+    <ImageView
+        android:id="@+id/no_result"
+        android:layout_width="81dip"
+        android:layout_height="81dip"
+        android:src="@mipmap/load_connection_is_bad"/>
+
+    <TextView
+        android:id="@+id/noresultshow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="暂无数据"
+        android:textColor="#999999"
+        android:textSize="20sp"/>
+
+
+    <TextView
+        android:id="@+id/click_load_result_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="点击刷新重试"
+        android:textColor="@color/text_title"
+        android:textSize="14sp"/>
+</LinearLayout>

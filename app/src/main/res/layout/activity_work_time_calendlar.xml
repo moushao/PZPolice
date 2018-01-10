@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/root_view"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+    >
+
+    <include
+        layout="@layout/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include
+                layout="@layout/content_my_info_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></include>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/interval2"
+                    android:layout_marginLeft="@dimen/interval2"
+                    android:layout_marginRight="@dimen/interval2"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_before"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="上一月"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/text_size_3"/>
+
+                    <TextView
+                        android:id="@+id/tv_next"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="下一月"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/text_size_3"/>
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyle_calendar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/content_background">
+                </android.support.v7.widget.RecyclerView>
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@color/screen_background"
+                android:clickable="true"
+                android:paddingBottom="@dimen/interval2"
+                android:paddingTop="@dimen/interval2"
+                android:text="     班次：A 09:00-17:00   警组：社区（一）"
+
+                android:textSize="@dimen/text_size_2"/>
+
+
+            <LinearLayout
+                android:id="@+id/ll_day01"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_statistics"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        >
+
+                        <ImageView
+                            android:layout_width="@dimen/button_size_3"
+                            android:layout_height="@dimen/button_size_3"
+                            android:layout_marginLeft="@dimen/interval2"
+                            android:src="@mipmap/time"/>
+
+                        <TextView
+                            android:id="@+id/tv_statistics"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginBottom="@dimen/interval2"
+                            android:layout_marginLeft="@dimen/interval2"
+                            android:layout_marginTop="@dimen/interval2"
+                            android:clickable="true"
+                            android:text="今日申报2次，共计XX分"
+                            android:textColor="@color/text_black"
+                            android:textSize="@dimen/text_size_3"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_declare"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/button_size_3"
+                            android:layout_height="@dimen/button_size_3"
+                            android:layout_marginLeft="@dimen/interval2"
+                            android:src="@mipmap/time"/>
+
+                        <TextView
+                            android:id="@+id/tv_declare"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginBottom="@dimen/interval2"
+                            android:layout_marginLeft="@dimen/interval2"
+                            android:layout_marginTop="@dimen/interval2"
+                            android:clickable="true"
+                            android:text="现在申报"
+                            android:textColor="@color/text_black"
+                            android:textSize="@dimen/text_size_3"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <include
+                    layout="@layout/item_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"></include>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycleview_work_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

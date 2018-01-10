@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/screen_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_informatino"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/content_background"
+        android:orientation="vertical">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/interval2"
+            android:paddingTop="@dimen/interval2">
+
+            <ImageView
+                android:layout_width="@dimen/button_size_4"
+                android:layout_height="@dimen/button_size_4"
+                android:layout_marginLeft="@dimen/interval1"
+                android:src="@mipmap/review_id" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/interval1"
+                android:text="审批编号　"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_size_3" />
+
+            <TextView
+                android:id="@+id/tv_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/interval2"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:textSize="@dimen/text_size_3" />
+        </LinearLayout>
+
+        <include layout="@layout/item_line" />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/interval2"
+            android:paddingTop="@dimen/interval2">
+
+            <ImageView
+                android:layout_width="@dimen/button_size_4"
+                android:layout_height="@dimen/button_size_4"
+                android:layout_marginLeft="@dimen/interval1"
+                android:src="@mipmap/department" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/interval1"
+                android:text="所在部门　"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_size_3" />
+
+            <TextView
+                android:id="@+id/tv_department"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/interval2"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:textSize="@dimen/text_size_3" />
+        </LinearLayout>
+
+        <include layout="@layout/item_line" />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/interval2"
+            android:paddingTop="@dimen/interval2">
+
+            <ImageView
+                android:layout_width="@dimen/button_size_4"
+                android:layout_height="@dimen/button_size_4"
+                android:layout_marginLeft="@dimen/interval1"
+                android:src="@mipmap/time_total" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/interval1"
+                android:text="任务描述　"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_size_3" />
+
+            <TextView
+                android:id="@+id/tv_total_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/interval2"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:textSize="@dimen/text_size_3" />
+        </LinearLayout>
+
+        <include layout="@layout/item_line" />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/interval2"
+            android:paddingTop="@dimen/interval2">
+
+            <ImageView
+                android:layout_width="@dimen/button_size_4"
+                android:layout_height="@dimen/button_size_4"
+                android:layout_marginLeft="@dimen/interval1"
+                android:src="@mipmap/time_from_to" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/interval1"
+                android:text="完成时间　"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_size_3" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/interval2"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:textSize="@dimen/text_size_3" />
+        </LinearLayout>
+
+        <include layout="@layout/item_line" />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/interval2"
+            android:paddingTop="@dimen/interval2">
+
+            <ImageView
+                android:layout_width="@dimen/button_size_4"
+                android:layout_height="@dimen/button_size_4"
+                android:layout_marginLeft="@dimen/interval1"
+                android:src="@mipmap/reason" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/interval1"
+                android:text="完成情况　"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_size_3" />
+
+            <TextView
+                android:id="@+id/tv_reason"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/interval2"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:textSize="@dimen/text_size_3" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/item_line" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/interval1"
+        android:layout_marginLeft="@dimen/interval1"
+        android:layout_marginTop="@dimen/interval2"
+        android:text="子任务列表"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/text_size_3" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycleview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/content_background"></android.support.v7.widget.RecyclerView>
+
+    <include layout="@layout/item_interval" />
+</LinearLayout>

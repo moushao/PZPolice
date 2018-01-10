@@ -1,0 +1,57 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!--view之间的间隔-->
+    <dimen name="interval8">40dp</dimen>
+    <dimen name="interval7">35dp</dimen>
+    <dimen name="interval6">30dp</dimen>
+    <dimen name="interval5">25dp</dimen>
+    <dimen name="interval4">20dp</dimen>
+    <dimen name="interval3">15dp</dimen>
+    <dimen name="interval2">10dp</dimen>
+    <dimen name="interval1">5dp</dimen>
+
+    <!--UI的大小-->
+    <dimen name="button_size_20">100dp</dimen>
+    <dimen name="button_size_19">90dp</dimen>
+    <dimen name="button_size_18">90dp</dimen>
+    <dimen name="button_size_17">85dp</dimen>
+    <dimen name="button_size_16">80dp</dimen>
+    <dimen name="button_size_15">75dp</dimen>
+    <dimen name="button_size_14">70dp</dimen>
+    <dimen name="button_size_13">65dp</dimen>
+    <dimen name="button_size_12">60dp</dimen>
+    <dimen name="button_size_11">55dp</dimen>
+    <dimen name="button_size_10">50dp</dimen>
+    <dimen name="button_size_9">45dp</dimen>
+    <dimen name="button_size_8">40dp</dimen>
+    <dimen name="button_size_7">35dp</dimen>
+    <dimen name="button_size_6">30dp</dimen>
+    <dimen name="button_size_5">25dp</dimen>
+    <dimen name="button_size_4">20dp</dimen>
+    <dimen name="button_size_3">15dp</dimen>
+    <dimen name="button_size_2">10dp</dimen>
+    <dimen name="button_size_1">5dp</dimen>
+
+
+    <dimen name="large_button_width">300dp</dimen>
+
+    <!--文字的大小-->
+    <dimen name="text_size_7">24sp</dimen>
+    <dimen name="text_size_6">22sp</dimen>
+    <dimen name="text_size_5">20sp</dimen>
+    <dimen name="text_size_4">18sp</dimen>
+    <dimen name="text_size_3">16sp</dimen>
+    <dimen name="text_size_2">14sp</dimen>
+    <dimen name="text_size_1">12sp</dimen>
+
+    <!--按钮的圆角-->
+    <dimen name="button_radius">10dip</dimen>
+
+    <!--==========================================================================================-->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+</resources>

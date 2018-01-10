@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_titlebar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+    <!--android:background="@color/lcim_common_blue"-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tool_header_height"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/titlebar_iv_left"
+                android:layout_width="@dimen/user_avtor_width"
+                android:layout_height="@dimen/user_avtor_width"
+                android:paddingLeft="@dimen/img_padding"
+                android:paddingTop="@dimen/img_padding"
+                android:scaleType="fitCenter"
+                android:visibility="gone"
+                app:riv_corner_radius="10dp"
+                app:riv_mutate_background="true"
+                app:riv_oval="true" />
+
+            <TextView
+                android:id="@+id/titlebar_tv_left"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/img_padding"
+                android:textSize="@dimen/txtsize_subhead"
+                android:visibility="gone" />
+        </LinearLayout>
+
+     <!--   <LinearLayout
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+
+            android:orientation="horizontal">
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/title_tablayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@color/lcim_common_blue"
+                android:visibility="gone"
+                app:tabIndicatorColor="@android:color/white"
+                app:tabSelectedTextColor="@android:color/white"
+                app:tabTextColor="#ddd" />
+
+            <TextView
+                android:id="@+id/titlebar_tv_center"
+                style="@style/TextViewTitle"
+                android:layout_centerInParent="true"
+                android:gravity="center_horizontal"
+                android:maxWidth="224dp"
+                android:layout_width="wrap_content" />
+        </LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/titlebar_iv_right"
+                android:layout_width="@dimen/user_avtor_width"
+                android:layout_height="@dimen/user_avtor_width"
+                android:paddingLeft="@dimen/img_padding"
+                android:paddingTop="@dimen/img_padding"
+                android:scaleType="fitCenter"
+                android:visibility="gone"
+                app:riv_corner_radius="10dp"
+                app:riv_oval="true" />
+
+            <TextView
+                android:id="@+id/titlebar_tv_right"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/img_padding"
+                android:textSize="@dimen/txtsize_subhead"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

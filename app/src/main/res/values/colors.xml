@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--    <color name="colorPrimary">#1296db</color>
+        <color name="colorPrimaryDark">#0086cc</color> -->
+    <color name="colorPrimary">#7C7CAA</color>
+    <color name="colorPrimaryDark">#6777af</color>
+    <color name="colorAccent">#d4237a</color>
+    <color name="transparent">#00000000</color>
+    <color name="screen_background">#EEEEEE</color>
+    <color name="content_background">#FFFFFF</color>
+
+    <!--按钮相关颜色-->
+    <color name="button_pressed">#dfdfdf</color>
+    <color name="button_enabled">#d1cdcd</color>
+    <color name="button_focused">#d1cdcd</color>
+    <color name="button_selected">#d1cdcd</color>
+    <color name="button_theme">#1296db</color>
+    <color name="button_drak">#848383</color>
+
+
+    <!--文字相关颜色-->
+    <color name="text_white">#FFFFFF</color>
+    <color name="text_black">#242424</color>
+    <color name="text_normal">#646464</color>
+    <color name="text_title">#1296db</color>
+    <color name="text_dark">#7F7F7F</color>
+    <color name="text_red">#d40000</color>
+    <color name="text_orange">#ff6702</color>
+
+    <!--分割线-->
+    <color name="item_line">#f4f4f4</color>
+
+
+    <!--打卡View-->
+    <color name="daka_normal">#0cb1f2</color>
+    <color name="daka_unnormal">#efbf00</color>
+
+
+    <!--adapter Item 相关颜色-->
+    <color name="item_selected">#f4f4f4</color>
+
+    <!--图标随机颜色-->
+
+    <color name="random01">#5CCBF8</color>
+    <color name="random02">#5ACEB7</color>
+    <color name="random03">#F7BE29</color>
+    <color name="random04">#F75D5B</color>
+    <color name="random05">#9A89BF</color>
+</resources>

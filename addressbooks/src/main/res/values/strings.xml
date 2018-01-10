@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">addressbooks</string>
+    <string name="left_title_name">请选择人员</string>
+    <string name="confirm_name">确认</string>
+</resources>

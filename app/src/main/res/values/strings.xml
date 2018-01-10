@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">光明路派出所</string>
+
+    <string name="splash_copyright">Copyright &#169; 2015 SimplifyReader All Rights Reserved\nPowered by Obsessive and Chris</string>
+    <string name="splash_slogan">看尽生活中的点滴</string>
+    <string name="splash_version">V %1$s</string>
+
+    <string name="settings_thread_sort">帖子排序方式</string>
+    <string name="settings_text_size">字体大小</string>
+    <string name="settings_md_colors">主题颜色</string>
+    <string name="settings_auto_update">自动更新应用</string>
+    <string name="settings_swipeback_edgemode">手势返回</string>
+    <string name="settings_dt_swipeback_edgemode">设置手势方向</string>
+    <string name="settings_auto_notification">是否接受通知</string>
+    <string name="settings_general_settings">常规</string>
+    <string name="settings_notification_settings">通知</string>
+    <string name="category_read">阅读</string>
+    <string name="settings_load_pic">是否加载图片</string>
+    <string name="settings_load_pic_summary">默认加载列表和内容图片</string>
+    <string name="category_other">其他</string>
+    <string name="settings_pic_path">图片保存路径</string>
+    <string name="settings_clear_cache">清空缓存</string>
+
+
+    <string name="remove">移除</string>
+    <string name="stop">停止</string>
+    <string name="start_down">开始下载</string>
+    <string name="test_download_url">http://dl.bintray.com/wyouflf/maven/org/xutils/xutils/3.3.36/xutils-3.3.36.aar</string>
+    <string name="prompt_username">用户名</string>
+    <string name="prompt_password">密码</string>
+    <string name="action_sign_in">登录</string>
+    <string name="action_sign_in_short">登录</string>
+    <string name="error_invalid_password">密码长度不够</string>
+    <string name="error_incorrect_password">密码错误</string>
+    <string name="error_field_required">此字段必填</string>
+    <string name="login_faied">登录失败</string>
+    <string name="network_err">网路异常</string>
+
+    <string name="setting_cache">自动缓存</string>
+    <string name="setting_image">无图模式</string>
+    <string name="setting_night">夜间模式</string>
+    <string name="setting_feedback">意见反馈</string>
+    <string name="setting_clear">清除缓存</string>
+    <string name="setting_update">检查更新</string>
+    <string name="setting_normal">常规</string>
+    <string name="setting_ui">视图</string>
+    <string name="setting_other">其他</string>
+    <string name="setting_recycleview">列表加载方式</string>
+    <string name="setting_recycleview_head">列表顶部动画</string>
+
+
+    <string name="setting">设置</string>
+    <string name="transition_album_cover_toolbar">transition_album_cover_toolbar</string>
+    <string name="transition_album_cover_view">transition_album_cover_view</string>
+    <string name="change_password">修改密码</string>
+    <string name="confirm_submission">你是否确认提交？</string>
+
+
+</resources>

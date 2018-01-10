@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/item_line"/>
+
+    <LinearLayout
+        android:id="@+id/ll_mp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/interval2"
+        android:paddingTop="@dimen/interval2">
+
+        <ImageView
+            android:layout_width="@dimen/button_size_4"
+            android:layout_height="@dimen/button_size_4"
+            android:layout_marginLeft="@dimen/interval1"
+            android:src="@mipmap/case_police_main"/>
+
+        <TextView
+            android:id="@+id/tv_host"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/interval1"
+            android:text="@string/host_police"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_3"/>
+
+        <TextView
+            android:id="@+id/tv_mp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:hint="@string/default_username"
+            android:textSize="@dimen/text_size_3"/>
+
+        <ImageView
+            android:layout_width="@dimen/button_size_4"
+            android:layout_height="@dimen/button_size_4"
+            android:layout_marginRight="@dimen/interval2"
+            />
+    </LinearLayout>
+
+    <include layout="@layout/item_line"/>
+
+    <LinearLayout
+        android:id="@+id/ll_join_person"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/interval2"
+        android:paddingTop="@dimen/interval2">
+
+        <ImageView
+            android:layout_width="@dimen/button_size_4"
+            android:layout_height="@dimen/button_size_4"
+            android:layout_marginLeft="@dimen/interval1"
+            android:src="@mipmap/co_police"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/interval1"
+            android:text="@string/co_police"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_3"/>
+
+        <TextView
+            android:id="@+id/tv_join_person"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:hint="@string/please_chose_members"
+            android:textSize="@dimen/text_size_3"/>
+
+        <ImageView
+            android:layout_width="@dimen/button_size_4"
+            android:layout_height="@dimen/button_size_4"
+            android:layout_marginRight="@dimen/interval2"
+            android:src="@mipmap/right"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_join_persons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/interval6"
+        android:layout_marginRight="@dimen/interval6"
+        android:layout_weight="1"
+        android:gravity="left"
+        android:textSize="@dimen/text_size_3"/>
+
+    <include layout="@layout/item_line"/>
+
+    <include layout="@layout/item_line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+
+        android:paddingBottom="@dimen/interval2"
+        android:paddingTop="@dimen/interval2">
+
+        <ImageView
+            android:layout_width="@dimen/button_size_4"
+            android:layout_height="@dimen/button_size_4"
+            android:layout_marginLeft="@dimen/interval1"
+            android:src="@mipmap/point_distribute"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/interval1"
+            android:text="@string/point_distribute"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_3"/>
+
+        <TextView
+            android:id="@+id/tv_case_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="总分0分"
+            android:textSize="@dimen/text_size_3"/>
+
+        <ImageView
+            android:layout_width="@dimen/button_size_4"
+            android:layout_height="@dimen/button_size_4"
+            android:layout_marginRight="@dimen/interval2"
+            />
+    </LinearLayout>
+
+    <include layout="@layout/item_line"/>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/case_point_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/content_background">
+    </android.support.v7.widget.RecyclerView>
+
+    <include layout="@layout/item_line"/>
+
+
+    <TextView
+        android:id="@+id/tv_input_persons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/interval6"
+        android:layout_marginRight="@dimen/interval6"
+        android:layout_weight="1"
+        android:gravity="left"
+        android:textSize="@dimen/text_size_3"/>
+
+    <include layout="@layout/item_line"/>
+
+
+    <LinearLayout
+        android:id="@+id/ll_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/interval2"
+        android:paddingTop="@dimen/interval2">
+
+        <ImageView
+            android:layout_width="@dimen/button_size_4"
+            android:layout_height="@dimen/button_size_4"
+            android:layout_marginLeft="@dimen/interval1"
+            android:src="@mipmap/remarks"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/interval1"
+            android:text="@string/remarks"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_3"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+
+        <EditText
+            android:id="@+id/ed_bz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/interval2"
+            android:layout_marginRight="@dimen/interval2"
+            android:background="@drawable/bg_bz_edittext_selecter"
+            android:enabled="true"
+            android:gravity="left"
+            android:hint="@string/remarks_text"
+            android:maxLength="140"
+            android:minHeight="@dimen/button_size_12"
+            android:textSize="@dimen/text_size_3"/>
+    </LinearLayout>
+
+    <include layout="@layout/item_line"/>
+
+    <include layout="@layout/layout_select_picture"/>
+
+    <include layout="@layout/item_line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:minHeight="@dimen/button_size_8"
+        android:orientation="horizontal">
+
+        <com.dd.CircularProgressButton
+            android:id="@+id/submit"
+            android:layout_width="@dimen/large_button_width"
+            android:layout_height="@dimen/button_size_8"
+            android:textColor="@color/cpb_white"
+            android:textSize="18sp"
+            app:cpb_cornerRadius="@dimen/button_radius"
+            app:cpb_iconComplete="@mipmap/ic_action_accept"
+            app:cpb_iconError="@mipmap/ic_action_cancel"
+            app:cpb_selectorIdle="@color/colorPrimary"
+            app:cpb_textIdle="@string/declare"/>
+    </LinearLayout>
+</LinearLayout>

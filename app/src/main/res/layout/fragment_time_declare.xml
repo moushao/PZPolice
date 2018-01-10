@@ -1,0 +1,264 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/screen_background"
+              tools:context="com.pvirtech.pzpolice.ui.fragment.TimeDeclareFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/interval2"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/interval2"
+                android:text="申报类型"
+                android:textSize="@dimen/text_size_3"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycleview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/content_background"></android.support.v7.widget.RecyclerView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/interval2"
+                android:background="@color/content_background"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/interval2"
+                    android:layout_marginTop="@dimen/interval2"
+                    android:text="@string/declare_time"
+                    android:textSize="@dimen/text_size_3"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_total_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/interval2"
+                    android:paddingTop="@dimen/interval2">
+
+                    <ImageView
+                        android:layout_width="@dimen/button_size_4"
+                        android:layout_height="@dimen/button_size_4"
+                        android:layout_marginLeft="@dimen/interval1"
+                        android:src="@mipmap/time_total"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/interval1"
+                        android:text="申报时长　"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/text_size_3"/>
+
+                    <TextView
+                        android:id="@+id/tv_total_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="1"
+                        android:textSize="@dimen/text_size_3"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="天"
+                        android:textSize="@dimen/text_size_3"/>
+
+                    <ImageView
+                        android:layout_width="@dimen/button_size_4"
+                        android:layout_height="@dimen/button_size_4"
+                        android:layout_marginRight="@dimen/interval2"
+                        android:src="@mipmap/right"/>
+                </LinearLayout>
+
+                <include layout="@layout/item_line"/>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_start_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/interval2"
+                    android:paddingTop="@dimen/interval2">
+
+                    <ImageView
+                        android:layout_width="@dimen/button_size_4"
+                        android:layout_height="@dimen/button_size_4"
+                        android:layout_marginLeft="@dimen/interval1"
+                        android:src="@mipmap/calendar"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/interval1"
+                        android:text="开始时间　"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/text_size_3"/>
+
+                    <TextView
+                        android:id="@+id/tv_statrt_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="2017-03-22 14:00"
+                        android:textSize="@dimen/text_size_3"/>
+
+
+                    <ImageView
+                        android:layout_width="@dimen/button_size_4"
+                        android:layout_height="@dimen/button_size_4"
+                        android:layout_marginRight="@dimen/interval2"
+                        android:src="@mipmap/right"/>
+
+                </LinearLayout>
+
+                <include layout="@layout/item_line"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_end_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/interval2"
+                    android:paddingTop="@dimen/interval2">
+
+                    <ImageView
+                        android:layout_width="@dimen/button_size_4"
+                        android:layout_height="@dimen/button_size_4"
+                        android:layout_marginLeft="@dimen/interval1"
+                        android:src="@mipmap/calendar"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/interval1"
+                        android:text="@string/end_time"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/text_size_3"/>
+
+
+                    <TextView
+                        android:id="@+id/tv_end_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="2017-03-22 14:00"
+                        android:textSize="@dimen/text_size_3"/>
+
+
+                    <ImageView
+                        android:layout_width="@dimen/button_size_4"
+                        android:layout_height="@dimen/button_size_4"
+                        android:layout_marginRight="@dimen/interval2"
+                        android:src="@mipmap/right"/>
+
+                </LinearLayout>
+
+                <include layout="@layout/item_line"/>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_person"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:gravity="center_vertical"
+                    android:minHeight="@dimen/button_size_8"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/button_size_4"
+                        android:layout_height="@dimen/button_size_4"
+                        android:layout_marginLeft="@dimen/interval1"
+                        android:src="@mipmap/add_person"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/interval2"
+                        android:text="@string/declare_person"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/text_size_3"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_person_notice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="@string/please_fill_in"
+                        android:textSize="@dimen/text_size_3"/>
+
+                    <ImageView
+                        android:layout_width="@dimen/button_size_4"
+                        android:layout_height="@dimen/button_size_4"
+                        android:layout_marginRight="@dimen/interval2"
+                        android:src="@mipmap/right"/>
+                </LinearLayout>
+
+
+                <include layout="@layout/item_line"/>
+
+                <TextView
+                    android:id="@+id/tv_person"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="@dimen/interval8"
+                    android:textSize="@dimen/text_size_3"/>
+
+                <include layout="@layout/item_line"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center"
+                    android:minHeight="@dimen/button_size_8"
+                    android:orientation="horizontal">
+
+                    <com.dd.CircularProgressButton
+                        android:id="@+id/submit"
+                        android:layout_width="@dimen/large_button_width"
+                        android:layout_height="@dimen/button_size_8"
+                        android:textColor="@color/cpb_white"
+                        android:textSize="18sp"
+                        app:cpb_cornerRadius="@dimen/button_radius"
+                        app:cpb_iconComplete="@mipmap/ic_action_accept"
+                        app:cpb_iconError="@mipmap/ic_action_cancel"
+                        app:cpb_selectorIdle="@color/colorPrimary"
+                        app:cpb_textIdle="@string/submit"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
